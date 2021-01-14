@@ -4,7 +4,7 @@ Photon PUN2를 이용한 멀티게임
 ----------------    
 
 1. 우리가 뭘 만들것인가?
-   * [Photon을 이용한 술래잡기 게임을 만들어보자](lecture/lecture1.md)
+   * [Photon을 이용한 술래잡기 게임을 만들어보자](lecture/lecture1-1.md)
    
 2. Photon설정하기
    * [Photon설정하기](lecture/lecutre2-1.md)
