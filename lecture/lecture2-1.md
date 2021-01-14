@@ -12,6 +12,12 @@ Photon 설정하기
 * Asset Store에서 PUN2 무료버전을 받아오자.  
 
 ------------------------------     
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture2/lecture2-1/2-1-5.PNG" width="50%">
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture2/lecture2-1/2-1-6.PNG" width="50%">   
+
+* PUN2 import해주자.  
+
+------------------------------     
 [목차로](https://github.com/isp829/HU/blob/master/README.md)  
 [다음](https://github.com/isp829/HU/blob/master/lecture/lectureA.md)  
 -----------------------------
