@@ -1,4 +1,4 @@
-점프&런 게임
+Photon을 이용한 술래잡기 게임을 만들어보자.
 =======================
 * 점프&런 게임이란?  
 ![그콧수염](https://github.com/isp829/HU/blob/master/images/lecture1/thatmustache.jpg) 
