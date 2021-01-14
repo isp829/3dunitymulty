@@ -10,6 +10,6 @@ Photon을 이용한 술래잡기 게임을 만들어보자.
 
 ------------------------------------------------------       
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
-[다음](https://github.com/isp829/HU/blob/master/lecture/lecture2.md)  
+[다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture2-1.md)  
 -----------------------------
     
