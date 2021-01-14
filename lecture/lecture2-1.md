@@ -1,7 +1,6 @@
 Photon 설정하기
 ========================================
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture2/lecture2-1/2-1-1.png" width="50%">
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture2-1/2-1-2.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture2/lecture2-1/2-1-1.png" width="50%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture2/lecture2-1/2-1-2.PNG" width="50%">  
   
 * 3D프로젝트 하나 만들어주자.  
 ------------------------------ 
