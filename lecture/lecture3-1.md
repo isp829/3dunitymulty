@@ -147,7 +147,8 @@ public class MenuManager : MonoBehaviour
 }
 
 ```
-* MenuManager의 스크립트 전문이다.
+* MenuManager의 스크립트 전문이다.   
+----------------------------  
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-2.md)  
 -----------------------------
