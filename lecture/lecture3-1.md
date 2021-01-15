@@ -31,8 +31,8 @@
 
 * 카메라 설정으로 가서 배경색을 회색으로 해주자.  
  ---------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-1/3-1-9.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-1/3-1-11.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-1/3-1-9.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-1/3-1-11.png" width="50%">  
 
 * loadingMenu에 text mesh pro를 넣어준다.  
 * 크기 조절과 가운데 정렬을 해주고 loading 적어준다.   
