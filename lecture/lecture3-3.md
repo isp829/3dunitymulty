@@ -36,7 +36,7 @@
 * 텍스트들을 수정해준다.  
 
 -------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-13.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-13.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-14.PNG" width="50%">  
 
 * menu스크립트를 넣어주고 이름을 넣어준다.   
