@@ -13,6 +13,7 @@ Photon PUN2를 이용한 멀티게임
    * [메뉴 만들기1](lecture/lecture3-1.md)
    * [메뉴 만들기2](lecture/lecture3-2.md)   
    * [메뉴 만들기3](lecture/lecture3-3.md)   
+   * [메뉴 만들기4](lecture/lecture3-4.md)   
    
 4. 기본 조작 만들기
    * [기본 조작 만들기](lecture/lecture4-1.md)
