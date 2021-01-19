@@ -158,9 +158,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 * 설정다했으면 빌드해주자.  
 
 ----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-20.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-21.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-22.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-20.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-21.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-22.PNG" width="33%">  
 
 * 빌드한거랑 프로젝트에서 실행하는거 둘다 실행해보면 한쪽에서 만든방을 다른쪽이 볼 수 있고 참여할 수 있다.  
 
