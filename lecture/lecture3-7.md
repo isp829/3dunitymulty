@@ -5,7 +5,7 @@
 * start game버튼을 누르면 게임이 시작되도록 해주자.  
 
 -------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-2.png" width="50%">   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-2.PNG" width="50%">   
 
 * canvas에도 새로 추가한 요소들을 넣어주자. 
 
