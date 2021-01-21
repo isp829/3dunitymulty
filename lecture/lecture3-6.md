@@ -209,7 +209,42 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
 * 빌드한다음 여러개를 실행시켜보면 새로운 사람이 방에 들어올때마다 목록에 추가되는걸 볼 수 있다.  
 
------------------------ 
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-15.PNG" width="50%">  
+
+* Game Scene을 만들어주자.  
+
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-15.PNG" width="50%">  
+
+* Game Scene을 만들어주자.  
+
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-16.PNG" width="50%">  
+
+* 빌드 세팅에서 game scene을 추가해주자.   
+
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-17.png" width="50%">  
+
+* Room Menu에서 leave room 버튼을 복사해주자. 
+
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-18.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-19.PNG" width="50%">  
+
+
+* 버튼의 크기와 위치를 조절해주고 text를 Start Game으로 바꿔주자.   
+
+-----------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-20.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-6/3-6-21.PNG" width="50%">  
+
+
+* launcher 스크립트를 수정해주자.  
+* 방에 들어온사람들이 모두 같은 scene을 보도록 해주고 start game을 누르면 아까 만든 game scene을 불러오게 해주자.  
+
+-----------------------   
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-7.md)  
 -----------------------------
