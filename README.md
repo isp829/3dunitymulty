@@ -19,7 +19,7 @@ Photon PUN2를 이용한 멀티게임
    * [메뉴 만들기7](lecture/lecture3-7.md)   
 
 4. Player Manager와 Room Manager 만들기
-   * [룸/플레이어 매니저 만들기](lecture/lecutre4-1.md)
+   * [룸/플레이어 매니저 만들기](lecture/lectre4-1.md)
    
 5. 기본 조작 만들기
    * [기본 조작 만들기](lecture/lecture5-1.md)
