@@ -1,4 +1,4 @@
-룸/플레이어 매니저 만들기
+룸/플레이어 매니저 만들기 1
 =======================
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-1.PNG" width="50%">   
 
