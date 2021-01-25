@@ -48,10 +48,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject cameraHolder;
     //마우스감도 뛰는속도 걷는속도 점프힘 뛰기걷기바꿀때 가속시간
     float verticalLookRotation;
-    bool grounded;//점프를 위한 바닥체크
-    Vector3 smoothMoveVelocity;
-    Vector3 moveAmount;//실제 이동거리
-
+    
     Rigidbody rb;
 
     void Awake()
