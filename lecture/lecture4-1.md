@@ -157,8 +157,8 @@ public class PlayerManager : MonoBehaviour
 * 3D Object capsule을 하나 만들고 이름붙여주자.  
 
 ------------------------------------------------------       
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture4-1/4-1-19.png" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture4-1/4-1-20.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-19.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-20.PNG" width="50%">  
 
 * PlayerController안에 camera도 추가해주고 위치를 조절해준다.  
 * 포톤 뷰도 추가해준다.  
