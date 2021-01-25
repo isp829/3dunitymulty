@@ -152,7 +152,7 @@ public class PlayerManager : MonoBehaviour
 * 실행해서 디버그를 보면 잘 싱행되는걸 알 수 있다.  
 
 --------------------
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture4-1/4-1-18.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-18.PNG" width="50%">  
 
 * 3D Object capsule을 하나 만들고 이름붙여주자.  
 
