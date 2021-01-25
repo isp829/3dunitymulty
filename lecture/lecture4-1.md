@@ -147,7 +147,7 @@ public class PlayerManager : MonoBehaviour
 * PlayerManager 프리펩에 PlayerManager스크립트를 넣어준다.  
 
 --------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-17.PNG" width="50%">   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-1/4-1-17.png" width="50%">   
 
 * 실행해서 디버그를 보면 잘 싱행되는걸 알 수 있다.  
 
