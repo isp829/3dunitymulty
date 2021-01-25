@@ -50,8 +50,8 @@ public class PlayerManager : MonoBehaviour
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-4.PNG" width="50%">   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-5.png" width="50%">   
 
-* 로그를 보면 audio listner가 2개있다고 뜬다.  
-* Game Scene에서 메인카메라의 audio lister를 해제해 주자.  
+* 로그를 보면 audio listener가 2개있다고 뜬다.  
+* Game Scene에서 메인카메라의 audio listener를 해제해 주자.  
 
 ------------------------------------------------------       
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
