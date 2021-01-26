@@ -1,11 +1,22 @@
 기본조작 만들기    
 =======================
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-1.PNG" width="50%">  
 
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture5-1/5-1-2.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture1/lecture5-1/5-1-2.PNG" width="50%">  
+* CameraHolder를 만들어주고 그안에 카메라를 넣어준다.  
 
-* PlayerController를 프리펩화 시켜주고 PlayerManager스크립트를 수정해준다.  
----------------------------
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-2.PNG" width="50%">  
+
+* PlayerController에 rigidbody를 넣어주고 xyz축 회전을 막아주자.  
+
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-3.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-4.PNG" width="50%">  
+
+* PlayerController스크립트를 만들어주자.  
+* 일단은 마우스를 좌우로 이동시킨만큼 시야가 변하도록 해주자.  
+
+---------------------------   
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -35,8 +46,24 @@ public class PlayerController : MonoBehaviour
 }
 
 ```
-5-1-4 
-------------------------------------------------------      
+
+* PlayerController의 전문이다.  
+
+------------------------------------------------------
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-5.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-6.PNG" width="50%">  
+
+* 실행하기전에 Game Scene에 바닥으로쓸 plane을 하나 추가해주고 위치를 조정해준다.  
+* PlayerController에서 mouse sensitivity를 설정해주고 실행해보면 마우스 움직이는 만큼 내 캐릭터의 시야가 바뀐다.  
+
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-7.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-8.PNG" width="50%">  
+
+* 코드를 더 추가해주자.  
+* 마우스를 위 아래로 움직인만큼 카메라의 각도가 변하도록 해주자.  
+
+---------------------------   
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -70,8 +97,38 @@ public class PlayerController : MonoBehaviour
 }
 
 ```
-5-1-8
+* 수정한 PlayerController스크립트의 전문이다.  
+
 --------------
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-9.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-10.PNG" width="50%">  
+
+* PlayerController프리펩에 cameraHolder를 추가해주고 실행해주자.  
+* 이제는 카메라시점이 마우스 움직이는데로 상하 좌우 다 바뀐다.  
+
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-11.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-12.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-14.PNG" width="50%">  
+
+
+* 바닥체크용으로 PlayerController에 큐브를 추가해준다.  
+* 크기와 위치를 조절해주고 메쉬필터와 메쉬렌더러는 삭제해주자.  
+
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-13.PNG" width="50%">  
+
+
+* PlayerGroundCheck스크립트를 작성해주자.  
+
+---------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-15.PNG" width="50%">  
+
+
+* 물체에 접촉 여부에 따라 다른값을 PlayerController에 보내도록 작성해주자.  
+* 작성한 PlayerGroundCheck스크립트는 아까만든 큐브에 넣어주도록하자.  
+
+---------------------------   
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -111,8 +168,20 @@ public class PlayerGroundCheck : MonoBehaviour
 }
 
 ```
-5-1-15
+* PlayerGroundCheck스크립트의 전문이다.  
+
 -------------------
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-16.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-17.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-18.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-19.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-20.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-21.PNG" width="50%">  
+
+* PlayerController스크립트에 코드를 추가해주자.  
+* 방향키로 움직이고 스페이스바를 누르면 점프하도록 코드를 짜주자.  
+
+---------------------------   
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -184,7 +253,8 @@ public class PlayerController : MonoBehaviour
 }
 
 ```
-5-1-21
+* 수정한 PlayerController스크립트의 전문이다.  
+
 -----------------
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture5-2.md)  
