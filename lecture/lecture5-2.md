@@ -87,13 +87,13 @@ public class PlayerGroundCheck : MonoBehaviour
 * window=>rendering=>lightning을 클릭해서 빛 설정 창을 열어주자.  
 
 ---------------------------    
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-5.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-6.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-5.png" width="50%">    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-6.png" width="50%">    
 
 * new lighting을 만들어주고 auto generate를 클릭해주자.  
 
 ---------------------------    
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-7.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-7.png" width="50%">    
 
 * 그리고 environment에서 skybox를 default skybox로 설정해주면 살짝 어둡던 game scene이 확 밝아진다.  
 
@@ -299,7 +299,7 @@ public class PlayerController : MonoBehaviour
 * 이제 서로 화면에 다르게 보이는 문제만 고치면된다.    
 
 ---------------------------    
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-16.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-2/5-2-16.png" width="50%">     
 
 * PlayerController 프리펩에서 PhotonView transform을 추가해준다.  
 * 위치, 각도, 크기를 동기화 시키도록 체크해주자.  
