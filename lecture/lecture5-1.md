@@ -5,7 +5,7 @@
 * CameraHolder를 만들어주고 그안에 카메라를 넣어준다.  
 
 ---------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-2.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-2.png" width="50%">    
 
 * PlayerController에 rigidbody를 넣어주고 xyz축 회전을 막아주자.  
 
