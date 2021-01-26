@@ -108,12 +108,13 @@ public class PlayerController : MonoBehaviour
 
 ---------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-11.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-12.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-22.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-14.PNG" width="50%">  
 
 
 * 바닥체크용으로 PlayerController에 큐브를 추가해준다.  
 * 크기와 위치를 조절해주고 메쉬필터와 메쉬렌더러는 삭제해주자.  
+* 큐브에 rigidbody를 추가해주고 istrigger를 체크해주자.  
 
 ---------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-13.PNG" width="50%">  
