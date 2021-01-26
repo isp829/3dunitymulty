@@ -71,6 +71,47 @@ public class PlayerController : MonoBehaviour
 
 ```
 5-1-8
+--------------
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerGroundCheck : MonoBehaviour
+{
+    PlayerController playerController;//Player Controller 스크립트를 메서드로 사용하기 위해 선언
+    void Awake()
+    {
+        playerController = GetComponentInParent<PlayerController>();      
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(true);
+        //닿으면 true
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(false);
+        //떨어지면 true
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(true);
+        //닿고 있으면 true
+    }
+}
+
+```
+5-1-15
 -----------------
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture5-2.md)  
