@@ -23,7 +23,8 @@ Photon PUN2를 이용한 멀티게임
    * [룸/플레이어 매니저 만들기2](lecture/lecture4-2.md)    
    
 5. 기본 조작 만들기
-   * [기본 조작 만들기](lecture/lecture5-1.md)
+   * [기본 조작 만들기1](lecture/lecture5-1.md)
+   * [기본 조작 만들기2](lecture/lecture5-2.md)
 
 6. 사용할 아이템 만들기
    * [사용할 무기 만들기](lecture/lecture6-1.md)
