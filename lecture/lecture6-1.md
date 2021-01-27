@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour
 * 수정한 PlayerController스크립트의 전문이다.  
 
 -------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-1/6-1-19.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-1/6-1-19.png" width="50%">  
 
 * 수정한 PlayerContrller에서 Gun1과 Gun2를 등록해주자.   
 
