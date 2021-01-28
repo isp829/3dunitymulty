@@ -29,6 +29,7 @@ Photon PUN2를 이용한 멀티게임
 6. 사용할 아이템 만들기
    * [사용할 아이템 만들기1](lecture/lecture6-1.md)    
    * [사용할 아이템 만들기2](lecture/lecture6-2.md)      
+   * [사용할 아이템 만들기3](lecture/lecture6-3.md)      
    
 7. 술래 정하기
    * [술래정하기](lecture/lecture7-1.md)
