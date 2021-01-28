@@ -123,11 +123,6 @@ public class PlayerListItem : MonoBehaviourPunCallbacks//다른 포톤 반응 �
 
 * Player List Item 스크립트의 전문이다.   
 
---------------------
-```
-
-* Player List Item스크립트의 전문이다.  
-
 -----------------------  
 ```
 using System.Collections;
