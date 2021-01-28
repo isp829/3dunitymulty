@@ -49,6 +49,23 @@
 * 실행해보면 클릭할때마다 디버그 로그가 정상적으로 뜬다.  
 
 ------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-3/6-3-11.PNG" width="50%">  
+
+* 카메라에서 레이저를 발사하고 레이저가 물체에 닿으면 디버그 로그가 뜨도록 코드를 수정해주자.  
+
+------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-3/6-3-12.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-3/6-3-13.png" width="50%">  
+
+* Rifle과 Pistol에있는 Gun스크립트에 PlayerController프리펩에 붙어있는 카메라를  할당해준다.    
+
+------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-3/6-3-14.PNG" width="50%">  
+
+* 실행해보면 잘 작동한다.   
+
+------------------------------------------------------    
+
 
 
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
