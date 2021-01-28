@@ -33,6 +33,48 @@
 * 함수 호출할때 똑같은 for문이 중복해서 돌아가므로 한번만 작동하게 해주자.  
 * 이건 안고쳐도 메뉴 작동하는데는 문제가 없지만 바꿔주자.  
 
+----------------------------------  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-10.PNG" width="50%">   
+
+* 실행해 보면 아까 문제들이 다 사라졌다.  
+
+----------------------- 
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-6.PNG" width="50%">   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-8.PNG" width="50%">   
+
+* launcher스크립트도 수정해주자.  
+* 방에 들어가면 전에있던 이름표들을 없애주는 코드를 만들어준다.  
+* 또 사라진 방은 방목록에 안뜨게 수정해준다.  
+
+-------------------------------------------------------------   
+```
+using Photon.Realtime;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class RoomListItem : MonoBehaviour
+{
+    [SerializeField] TMP_Text text;
+
+    public RoomInfo info;//포톤 리얼타임의 방정보 기능. 퍼블릭으로 선언해서 다른곳에서 접근 가능하도록 수정. 
+    public void SetUp(RoomInfo _info)//방정보 받아오기
+    {
+        info = _info;
+        text.text= _info.Name;
+    }
+
+    public void OnClick()
+    {
+        Launcher.Instance.JoinRoom(info);//런처스크립트 메서드로 JoinRoom실행
+    }
+}
+
+```
+
+* 수정한 RoomListItem스크립트의 전문이다. 
+
 -------------------------------------------------------------   
 ```
 using System.Collections;
@@ -86,49 +128,6 @@ public class MenuManager : MonoBehaviour
 ```
 
 * 수정한 MenuManager 스크립트의 전문이다.
-
-----------------------------------  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-10.PNG" width="50%">   
-
-* 실행해 보면 아까 문제들이 다 사라졌다.  
-
--------------------------  
--------------------------------------------------------------   
-```
-using Photon.Realtime;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
-
-public class RoomListItem : MonoBehaviour
-{
-    [SerializeField] TMP_Text text;
-
-    public RoomInfo info;//포톤 리얼타임의 방정보 기능. 퍼블릭으로 선언해서 다른곳에서 접근 가능하도록 수정. 
-    public void SetUp(RoomInfo _info)//방정보 받아오기
-    {
-        info = _info;
-        text.text= _info.Name;
-    }
-
-    public void OnClick()
-    {
-        Launcher.Instance.JoinRoom(info);//런처스크립트 메서드로 JoinRoom실행
-    }
-}
-
-```
-
-* 수정한 RoomListItem스크립티의 전문이다. 
-
------------------------ 
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-6.PNG" width="50%">   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-8.PNG" width="50%">   
-
-* launcher스크립트도 수정해주자.  
-* 방에 들어가면 전에있던 이름표들을 없애주는 코드를 만들어준다.  
-* 또 사라진 방은 방목록에 안뜨게 수정해준다.  
 
 -------------------------  
 ```  
@@ -265,6 +264,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 ```
 
 * 수정한 launcher스크립트의 전문이다.  
+--------------------   
 
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture4-1.md)  
