@@ -46,6 +46,19 @@
 * 어떻게 해야 서로 같은게 보일까?    
 
 ------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-9.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-10.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-11.PNG" width="50%">  
+
+* Player Controller를 수정해주자.  
+* Player properties를 hash table형식으로 저장해서 서로 어떤 아이템을 가지고 있는지 확인할 수 있게 해주자.  
+
+------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-12.PNG" width="50%">  
+
+* 실행해보면 서로 어떤 아이템을 들고 있는지 확인할 수 있다.     
+
+------------------------------------------------------    
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture7-1.md)  
 -----------------------------
