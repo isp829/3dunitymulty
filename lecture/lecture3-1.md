@@ -75,6 +75,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;//포톤 기능 사용
+
+
+public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아들이기
+{
+    void Start()
+    {
+        Debug.Log("Connecting to Master");
+        PhotonNetwork.ConnectUsingSettings();//설정한 포톤 서버에 때라 마스터 서버에 연결
+    }
+
+    public override void OnConnectedToMaster()//마스터서버에 연결시 작동됨
+    {
+        Debug.Log("Connected to Master");
+        PhotonNetwork.JoinLobby();//마스터 서버 연결시 로비로 연결
+    }
+
+    public override void OnJoinedLobby()//로비에 연결시 작동
+    {
+        Debug.Log("Joined Lobby");
+    }
+}
+
+```
+
+* Launcher스크립트의 전문이다.  
+
+--------------------     
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Menu : MonoBehaviour
 {

@@ -13,42 +13,6 @@
 
 * launcher에서 로비에 들어가면 타이틀 메뉴가 켜지도록 코드를 수정해준다.
 
----------------------------------------   
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Photon.Pun;//포톤 기능 사용
-
-public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아들이기
-{
-    void Start()
-    {
-        Debug.Log("Connecting to Master");
-        PhotonNetwork.ConnectUsingSettings();//설정한 포톤 서버에 때라 마스터 서버에 연결
-    }
-
-    public override void OnConnectedToMaster()//마스터서버에 연결시 작동됨
-    {
-        Debug.Log("Connected to Master");
-        PhotonNetwork.JoinLobby();//마스터 서버 연결시 로비로 연결
-    }
-
-    public override void OnJoinedLobby()//로비에 연결시 작동
-    {
-        MenuManager.Instance.OpenMenu("title");//로비에 들어오면 타이틀 메뉴 키기
-        Debug.Log("Joined Lobby");
-    }
-    void Update()
-    {
-        
-    }
-}
-
-```
-
-* 수정한 코드의 전문이다.
-
 ----------------------- 
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-2/3-2-5.PNG" width="50%">  
 
@@ -95,7 +59,14 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
 * launcher 스크립트를 열어서 수정해주자. 
 
----------------------------------------   
+---------------------
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-2/3-2-19.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-2/3-2-20.PNG" width="50%">  
+
+* create room menu에 menu스크립트를 넣어주고 이름을 입력해준다.  
+* canvas에서도 새로 입력한 요소들을 넣어준다. 
+
+---------------------------------------  
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -136,16 +107,9 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
 ```
 
-* 수정한 launcher 스크립트이다. 
+* 수정한 launcher 스크립트전문이다.
 
----------------------
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-2/3-2-19.png" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-2/3-2-20.PNG" width="50%">  
-
-* create room menu에 menu스크립트를 넣어주고 이름을 입력해준다.  
-* canvas에서도 새로 입력한 요소들을 넣어준다. 
-
----------------------------------------   
+-------------------------    
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-3.md)  
 -----------------------------

@@ -27,6 +27,26 @@
 * 일단 room list item스크립트를 열어서 roominfo를 퍼블릭으로 해주자.  
 
 -------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-9.PNG" width="50%">   
+
+* menu manager스크립도 수정해주자.  
+* 함수 호출할때 똑같은 for문이 중복해서 돌아가므로 한번만 작동하게 해주자.  
+* 이건 안고쳐도 메뉴 작동하는데는 문제가 없지만 바꿔주자.  
+
+----------------------------------  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-10.PNG" width="50%">   
+
+* 실행해 보면 아까 문제들이 다 사라졌다.  
+
+----------------------- 
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-6.PNG" width="50%">   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-8.PNG" width="50%">   
+
+* launcher스크립트도 수정해주자.  
+* 방에 들어가면 전에있던 이름표들을 없애주는 코드를 만들어준다.  
+* 또 사라진 방은 방목록에 안뜨게 수정해준다.  
+
+-------------------------------------------------------------   
 ```
 using Photon.Realtime;
 using System.Collections;
@@ -53,15 +73,61 @@ public class RoomListItem : MonoBehaviour
 
 ```
 
-* 수정한 RoomListItem스크립티의 전문이다. 
+* 수정한 RoomListItem스크립트의 전문이다. 
 
------------------------ 
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-6.PNG" width="50%">   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-8.PNG" width="50%">   
+-------------------------------------------------------------   
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-* launcher스크립트도 수정해주자.  
-* 방에 들어가면 전에있던 이름표들을 없애주는 코드를 만들어준다.  
-* 또 사라진 방은 방목록에 안뜨게 수정해준다.  
+public class MenuManager : MonoBehaviour
+{
+    public static MenuManager Instance;//다른 class에서도 호출가능
+
+    [SerializeField] Menu[] menus;//SerializedField를 사용하면 우리는 public처럼 쓸 수 있지만  public이 아니여서 외부에서는 못만짐.
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void OpenMenu(string menuName)
+    {
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (menus[i].menuName == menuName)//string을 받아서 해당이름 가진 메뉴를 여는 스크립트
+            {
+                menus[i].Open();//오픈 메뉴(스트링)에 있는 for문이 오픈 메뉴(메뉴)에도 똑같이 있어서 중복을 피하고자 코드 수정.  
+            }
+            else if (menus[i].open)
+            {
+                CloseMenu(menus[i]);
+            }
+        }
+    }
+
+    public void OpenMenu(Menu menu)
+    {
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (menus[i].open)
+            {
+                CloseMenu(menus[i]);
+            }
+        }
+        menu.Open();
+    }
+
+    public void CloseMenu(Menu menu)
+    {
+        menu.Close();
+    }
+}
+
+```
+
+* 수정한 MenuManager 스크립트의 전문이다.
 
 -------------------------  
 ```  
@@ -198,74 +264,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 ```
 
 * 수정한 launcher스크립트의 전문이다.  
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-9.PNG" width="50%">   
-
-* menu manager스크립도 수정해주자.  
-* 함수 호출할때 똑같은 for문이 중복해서 돌아가므로 한번만 작동하게 해주자.  
-* 이건 안고쳐도 메뉴 작동하는데는 문제가 없지만 바꿔주자.  
-
--------------------------------------------------------------   
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class MenuManager : MonoBehaviour
-{
-    public static MenuManager Instance;//다른 class에서도 호출가능
-
-    [SerializeField] Menu[] menus;//SerializedField를 사용하면 우리는 public처럼 쓸 수 있지만  public이 아니여서 외부에서는 못만짐.
-
-    private void Awake()
-    {
-        Instance = this;
-    }
-
-    public void OpenMenu(string menuName)
-    {
-        for (int i = 0; i < menus.Length; i++)
-        {
-            if (menus[i].menuName == menuName)//string을 받아서 해당이름 가진 메뉴를 여는 스크립트
-            {
-                menus[i].Open();//오픈 메뉴(스트링)에 있는 for문이 오픈 메뉴(메뉴)에도 똑같이 있어서 중복을 피하고자 코드 수정.  
-            }
-            else if (menus[i].open)
-            {
-                CloseMenu(menus[i]);
-            }
-        }
-    }
-
-    public void OpenMenu(Menu menu)
-    {
-        for (int i = 0; i < menus.Length; i++)
-        {
-            if (menus[i].open)
-            {
-                CloseMenu(menus[i]);
-            }
-        }
-        menu.Open();
-    }
-
-    public void CloseMenu(Menu menu)
-    {
-        menu.Close();
-    }
-}
-
-```
-
-* 수정한 MenuManager 스크립트의 전문이다.
-
-----------------------------------  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-7/3-7-10.PNG" width="50%">   
-
-* 실행해 보면 아까 문제들이 다 사라졌다.  
-
--------------------------  
+--------------------   
 
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture4-1.md)  

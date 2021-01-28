@@ -17,39 +17,6 @@
 * 일단은 마우스를 좌우로 이동시킨만큼 시야가 변하도록 해주자.  
 
 ---------------------------   
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerController : MonoBehaviour
-{
-    [SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime;
-    //마우스감도 뛰는속도 걷는속도 점프힘 뛰기걷기바꿀때 가속시간
-    float verticalLookRotation;
-    bool grounded;//점프를 위한 바닥체크
-    Vector3 smoothMoveVelocity;
-    Vector3 moveAmount;//실제 이동거리
-
-    Rigidbody rb;
-
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void Update()
-    {
-        transform.Rotate(Vector3.up*Input.GetAxis("Mouse X")*mouseSensitivity);
-        //마우스 움직이는 정도*민감도만큼 각도 움직이기
-    }
-}
-
-```
-
-* PlayerController의 전문이다.  
-
-------------------------------------------------------
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-5.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-6.PNG" width="50%">  
 
@@ -64,42 +31,6 @@ public class PlayerController : MonoBehaviour
 * 마우스를 위 아래로 움직인만큼 카메라의 각도가 변하도록 해주자.  
 
 ---------------------------   
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerController : MonoBehaviour
-{
-    [SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime;
-    [SerializeField] GameObject cameraHolder;
-    //마우스감도 뛰는속도 걷는속도 점프힘 뛰기걷기바꿀때 가속시간
-    float verticalLookRotation;
-    
-    Rigidbody rb;
-
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void Update()
-    {
-        transform.Rotate(Vector3.up*Input.GetAxis("Mouse X")*mouseSensitivity);
-        //마우스 움직이는 정도*민감도만큼 각도 움직이기
-        verticalLookRotation += Input.GetAxis("Mouse Y")*mouseSensitivity;
-        //마우스 움직이는 정도*민감도만큼 각도 값 받기
-        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
-        //y축 -90도에서 90도만 값으로 받음
-        cameraHolder.transform.localEulerAngles = Vector3.left * verticalLookRotation;
-        //받은 각도로 카메라도 돌려줌
-    }
-}
-
-```
-* 수정한 PlayerController스크립트의 전문이다.  
-
---------------
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-9.png" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-10.PNG" width="50%">  
 
@@ -130,48 +61,6 @@ public class PlayerController : MonoBehaviour
 * 작성한 PlayerGroundCheck스크립트는 아까만든 큐브에 넣어주도록하자.  
 
 ---------------------------   
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerGroundCheck : MonoBehaviour
-{
-    PlayerController playerController;//Player Controller 스크립트를 메서드로 사용하기 위해 선언
-    void Awake()
-    {
-        playerController = GetComponentInParent<PlayerController>();      
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == playerController.gameObject)
-            return;//해당 물체가 player면 무시
-        playerController.SetGroundedState(true);
-        //닿으면 true
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == playerController.gameObject)
-            return;//해당 물체가 player면 무시
-        playerController.SetGroundedState(false);
-        //떨어지면 true
-    }
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject == playerController.gameObject)
-            return;//해당 물체가 player면 무시
-        playerController.SetGroundedState(true);
-        //닿고 있으면 true
-    }
-}
-
-```
-* PlayerGroundCheck스크립트의 전문이다.  
-
--------------------
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-16.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-17.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture5/lecture5-1/5-1-18.PNG" width="50%">  
@@ -257,6 +146,48 @@ public class PlayerController : MonoBehaviour
 * 수정한 PlayerController스크립트의 전문이다.  
 
 -----------------
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerGroundCheck : MonoBehaviour
+{
+    PlayerController playerController;//Player Controller 스크립트를 메서드로 사용하기 위해 선언
+    void Awake()
+    {
+        playerController = GetComponentInParent<PlayerController>();      
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(true);
+        //닿으면 true
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(false);
+        //떨어지면 true
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject == playerController.gameObject)
+            return;//해당 물체가 player면 무시
+        playerController.SetGroundedState(true);
+        //닿고 있으면 true
+    }
+}
+
+```
+* PlayerGroundCheck스크립트의 전문이다.  
+
+-------------------   
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture5-2.md)  
 -----------------------------

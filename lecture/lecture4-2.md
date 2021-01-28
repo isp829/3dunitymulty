@@ -5,7 +5,19 @@
 
 * PlayerController를 프리펩화 시켜주고 PlayerManager스크립트를 수정해준다.   
 
+---------------------------------
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-3.PNG" width="50%">   
+
+* 실행해보면 PlayerManager하나당 PlayerController가 하나씩 만들어지는걸 볼 수 있다.  
+
 --------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-4.PNG" width="50%">   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-5.png" width="50%">   
+
+* 로그를 보면 audio listener가 2개있다고 뜬다.  
+* Game Scene에서 메인카메라의 audio listener를 해제해 주자.  
+
+------------------------------------------------------     
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -41,19 +53,7 @@ public class PlayerManager : MonoBehaviour
 
 * 수정한 PlayerManager스크립트의 전문이다.  
 
----------------------------------
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-3.PNG" width="50%">   
-
-* 실행해보면 PlayerManager하나당 PlayerController가 하나씩 만들어지는걸 볼 수 있다.  
-
---------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-4.PNG" width="50%">   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture4/lecture4-2/4-2-5.png" width="50%">   
-
-* 로그를 보면 audio listener가 2개있다고 뜬다.  
-* Game Scene에서 메인카메라의 audio listener를 해제해 주자.  
-
-------------------------------------------------------       
+-----------------------   
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture5-1.md)  
 -----------------------------

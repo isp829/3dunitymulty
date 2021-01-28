@@ -48,7 +48,17 @@
 
 * launcher 스크립트를 열어서 room메뉴와 error메뉴 스크립트를 작성해준다.
 
+---------------------------------------     
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-17.png" width="50%">  
+
+* canvas에 수정한 스크립트 요소들을 추가해 준다.  
+
 -------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-18.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-19.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-20.PNG" width="33%">
+
+* 만들어준 버튼들을 눌렀을때 어떤 행동을 해야 할지 생각하면서 눌렀을때 행동들을 다 정해준다.  
+
+-------------------------------------------------------------       
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -100,19 +110,9 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 }
 ```
 
-* 수정한 코드의 전문이다. 
+* 수정한 launcher스크립트의 전문이다. 
 
 ------------------
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-17.png" width="50%">  
-
-* canvas에 수정한 스크립트 요소들을 추가해 준다.  
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-18.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-19.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-3/3-3-20.PNG" width="33%">
-
-* 만들어준 버튼들을 눌렀을때 어떤 행동을 해야 할지 생각하면서 눌렀을때 행동들을 다 정해준다.  
-
----------------------------------------------  
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-4.md)  
 -----------------------------
