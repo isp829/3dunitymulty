@@ -16,6 +16,56 @@
 * launcher를 메서드화 시켜주고 방이름표들을 만들어주고 누르면 이동하도록 만들자. 
 
 -------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-8.PNG" width="50%">  
+
+* Room List Item 스크립트를 만들어주자. 
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-9.PNG" width="50%">  
+
+* 이름을 받아서 특정 방이름을 가진 방을 만들도록 코드를 짜주자. 
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-10.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-11.PNG" width="50%">  
+
+* Room List Button의 프리펩으로가서 Room List Item 스크립트를 넣어주고 요소들을 넣어주자.  
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-12.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-13.PNG" width="50%">  
+
+* 메뉴 스크립트를 find room menu에 넣어주고 canvas에가서 launcher에 추가한 요소들을 다 넣어주자.
+* room list item prefab에는 꼭 프리펩을 넣어야된다.
+
+----------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-14.PNG" width="50%">  
+
+* 타이틀 메뉴에있는 find room button에 행동을 추가해준다.  
+
+----------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-15.PNG" width="50%">  
+
+* 실행해보면 잘된다. 
+
+----------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-16.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-17.png" width="50%">  
+
+* 빌드해서 테스트 하기전에 설정을 해주자. 
+
+----------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-18.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-19.png" width="50%">  
+
+* 설정다했으면 빌드해주자.  
+
+----------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-20.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-21.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-22.PNG" width="33%">  
+
+* 빌드한거랑 프로젝트에서 실행하는거 둘다 실행해보면 한쪽에서 만든방을 다른쪽이 볼 수 있고 참여할 수 있다.  
+
+----------------------------------------   
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -112,57 +162,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
 * 수정한 launcher스크립트의 전문이다. 
 
-----------------------------
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-8.PNG" width="50%">  
-
-* Room List Item 스크립트를 만들어주자. 
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-9.PNG" width="50%">  
-
-* 이름을 받아서 특정 방이름을 가진 방을 만들도록 코드를 짜주자. 
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-10.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-11.PNG" width="50%">  
-
-* Room List Button의 프리펩으로가서 Room List Item 스크립트를 넣어주고 요소들을 넣어주자.  
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-12.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-13.PNG" width="50%">  
-
-* 메뉴 스크립트를 find room menu에 넣어주고 canvas에가서 launcher에 추가한 요소들을 다 넣어주자.
-* room list item prefab에는 꼭 프리펩을 넣어야된다.
-
-----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-14.PNG" width="50%">  
-
-* 타이틀 메뉴에있는 find room button에 행동을 추가해준다.  
-
-----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-15.PNG" width="50%">  
-
-* 실행해보면 잘된다. 
-
-----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-16.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-17.png" width="50%">  
-
-* 빌드해서 테스트 하기전에 설정을 해주자. 
-
-----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-18.png" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-19.png" width="50%">  
-
-* 설정다했으면 빌드해주자.  
-
-----------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-20.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-21.PNG" width="33%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-5/3-5-22.PNG" width="33%">  
-
-* 빌드한거랑 프로젝트에서 실행하는거 둘다 실행해보면 한쪽에서 만든방을 다른쪽이 볼 수 있고 참여할 수 있다.  
-
-----------------------------------------   
+----------------------------   
 
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-6.md)  
