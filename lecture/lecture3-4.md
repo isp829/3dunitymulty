@@ -24,6 +24,41 @@
 * leave room버튼을 눌렀을때 어떤행동을 해야할지 할당해준다. 
 * 실행해보면 방 만들고 방 나가기 까지는 작동하는걸 볼 수 있다. 
 
+------------------------     
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-8.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-9.PNG" width="50%">  
+
+* 새로운 메뉴를 만들어주자.  
+* Find Room Menu를 만들어주고 텍스트 메쉬 프로를 화면과 같이 넣어주자. 
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-10.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-11.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-12.PNG" width="50%">  
+
+* UI에서 image를 추가해주자.  
+* 크기와 위치와 색깔을 정해주면 화면과 같이 된다. 
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-13.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-14.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-15.PNG" width="50%">  
+
+* 버튼을 추가해주고 버튼을 누르면 title 메뉴로 돌아가게끔 설정을 해주자.  
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-16.PNG" width="50%">  
+
+* 아까 추가한 이미지에 vertical layout group을 추가해주고 설정을 해주자. 
+
+-------------------------------------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-17.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-18.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-19.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-20.PNG" width="50%">  
+
+* 방 이름으로 쓸 버튼을 추가해주고 크기를 조정해주고 prefab화 시켜준다. 
+
 -------------------------------------------------------------   
 ```
 using System.Collections;
@@ -90,44 +125,9 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
 ```
 
-* 추가한 launcher스크립트의 전문이다. 
+* 수정한 launcher스크립트의 전문이다.    
 
 ----------------------------------------------------    
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-8.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-9.PNG" width="50%">  
-
-* 새로운 메뉴를 만들어주자.  
-* Find Room Menu를 만들어주고 텍스트 메쉬 프로를 화면과 같이 넣어주자. 
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-10.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-11.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-12.PNG" width="50%">  
-
-* UI에서 image를 추가해주자.  
-* 크기와 위치와 색깔을 정해주면 화면과 같이 된다. 
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-13.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-14.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-15.PNG" width="50%">  
-
-* 버튼을 추가해주고 버튼을 누르면 title 메뉴로 돌아가게끔 설정을 해주자.  
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-16.PNG" width="50%">  
-
-* 아까 추가한 이미지에 vertical layout group을 추가해주고 설정을 해주자. 
-
--------------------------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-17.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-18.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-19.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture3/lecture3-4/3-4-20.PNG" width="50%">  
-
-* 방 이름으로 쓸 버튼을 추가해주고 크기를 조정해주고 prefab화 시켜준다. 
-
--------------------------------------------------------------   
 
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-5.md)  
