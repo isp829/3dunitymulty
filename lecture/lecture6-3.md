@@ -16,6 +16,11 @@
 * item스크립트에서 사용했던거를 상속하도록 코드를 짜주자  
 
 ------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-3/6-3-4.PNG" width="50%">  
+
+* 원거리 단발 아이템들을 관리하는 SingleShotGun스크립트를 만들어주자.  
+
+------------------------------------------------------    
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture6-3.md)  
 -----------------------------
