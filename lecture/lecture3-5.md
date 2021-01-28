@@ -163,7 +163,34 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 * 수정한 launcher스크립트의 전문이다. 
 
 ----------------------------   
+```
+using Photon.Realtime;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
+public class RoomListItem : MonoBehaviour
+{
+    [SerializeField] TMP_Text text;
+
+    public RoomInfo info;//포톤 리얼타임의 방정보 기능. 퍼블릭으로 선언해서 다른곳에서 접근 가능하도록 수정. 
+    public void SetUp(RoomInfo _info)//방정보 받아오기
+    {
+        info = _info;
+        text.text= _info.Name;
+    }
+
+    public void OnClick()
+    {
+        Launcher.Instance.JoinRoom(info);//런처스크립트 메서드로 JoinRoom실행
+    }
+}
+```
+
+* Room List Item 스크립트의 전문이다.   
+
+--------------------------  
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture3-6.md)  
 -----------------------------
