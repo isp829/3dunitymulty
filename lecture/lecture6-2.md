@@ -80,6 +80,7 @@
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-18.png" width="50%">  
 
 * 따라서 아이템목록도 이런식으로 객체 지향적으로 설계를 해야한다.  
+* 지금은 오히려 이렇게 객체지향으로 만드는게 더 많은 스크립트를 짜게 되지만 목록이 많아질수록 이방식이 절대적으로 편하다.  
 
 ------------------------------------------------------    
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-19.png" width="50%">  
