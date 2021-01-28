@@ -40,6 +40,12 @@
 * 실행해보면 마우스 휠로도 아이템이 바뀌는걸 볼 수 있다.  
 
 ------------------------------------------------------    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-2/6-2-8.PNG" width="50%">  
+
+* 하지만 여러개를 같이 실행해보면 내가 어떤 아이템을 들고 있는지 상대방은 모르고 나도 상대방의 아이템을 모른다.  
+* 어떻게 해야 서로 같은게 보일까?    
+
+------------------------------------------------------    
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture7-1.md)  
 -----------------------------
