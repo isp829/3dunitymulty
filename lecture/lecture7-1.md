@@ -24,8 +24,8 @@
 * GameController와의 정보 주고 받기를 위해서 PlayerController도 선언해주고 GameController를 사용한다고 선언해주고 추가해주자.   
 
 ----------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-8.PNG" width="100%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-9.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-8.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-9.png" width="100%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-10.PNG" width="50%">  
 
 * 기존에는 시작하자마자 아이템을 꼈지만 이제 술래만 아이템을 사용할 수 있으므로 시작할때는 아무것도 안들게 해준다.   
