@@ -19,7 +19,7 @@
 * 피해를 준쪽이 함수를 모두에게 호출해주고 피해를 받은 쪽만 RPC_TakeDamage를 실행하도록 해주자.  
 
 --------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-5.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-5.png" width="100%">  
 
 * 실행해보면 이제 상대방한테 맞을때마다 디버그 로그가 뜨는것을 알 수 있다.  
 * 하지만 맞아도 아무일이 없다면 의미가 없다.  
