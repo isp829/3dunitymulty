@@ -1,6 +1,6 @@
 사용할 아이템 만들기      
 =======================
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-1.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-1.PNG" width="100%">  
 
 * PlayerManager 스크립트를 수정해주자.  
 * SpawnManager로부터 Spawnpoint를 받아와서 인스턴스 생성할때 그 위치에 생성하도록 해주자.  
