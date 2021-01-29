@@ -41,7 +41,7 @@
 * 체력을 설정해주고 PlayerManager를 선언해서 PlayerManager의 Die함수를 불러오도록 코드를 수정해주자.   
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-21.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-21.png" width="50%">  
 
 * 맵밖으로 뛰어내려도 GameOver 되도록 코드를 추가해주자.  
 
