@@ -34,7 +34,7 @@
 
 ----------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-7.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-8.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-8.png" width="100%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-9.png" width="50%">  
 
 * PlayerController 스크립트도 수정해주자. 
