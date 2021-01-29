@@ -46,6 +46,55 @@
 * 실행해보면 체력이 0이된 플레이어는 캐릭터가 사라지고 Game Scene에있는 Main카메라로 시점이 바뀐다.  
 
 ----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-11.PNG" width="50%">  
+
+* Game Scene에서 SpawnManager=>SpwanPoint=>Capsule을 만들어준다.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-12.PNG" width="50%">  
+
+* Asset에 Material폴더를 만들어주고 그안에 spawnPoint가 잘 보이도록 Material을 만들어주고 Capsule에 넣어준다.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-13.png" width="50%">  
+
+* SpawnPoint를 프리펩화 시켜준다.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-14.PNG" width="50%">  
+
+* SpawnPoint를 스폰지점으로 삼고 싶은 곳에다가 놓아주자.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-15.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-16.PNG" width="50%">  
+
+* SpawnPoint 프리펩으로 돌아가서 어느쪽이 앞인지 구분이 쉽도록 표시를 해주자.  
+* 큐브를 하나 만들어주고 색깔을 구분하도록 material도 하나 만들어주자. 
+* 큐브가 튀어나온쪽이 캐릭터의 앞부분이다.  
+* 시작하면 맵바깥부분이 아닌 맵중앙을 보도록 회전시켜주자.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-17.PNG" width="50%">  
+
+* SpawnPoint 스크립트를 작성해주자.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-18.PNG" width="50%">  
+
+* 간단하게 시작되면 캡슐이랑 큐브는 사라지고 그 위치정보만 남게 해주자.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-19.PNG" width="50%">  
+
+* SpawnManager 스크립트를 작성해주자.  
+
+----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-20.PNG" width="50%">  
+
+* 다른 클래스에서 사용하기 위해서 정적 클래스로 선언해주고 랜덤한 스폰지점에서 시작하도록 해주자.  
+
+----------------------------------   
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
 [다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture6-5.md)  
 -----------------------------   
