@@ -41,6 +41,11 @@
 * 체력을 설정해주고 PlayerManager를 선언해서 PlayerManager의 Die함수를 불러오도록 코드를 수정해주자.   
 
 ----------------------------------   
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-21.PNG" width="50%">  
+
+* 맵밖으로 뛰어내려도 GameOver 되도록 코드를 추가해주자.  
+
+----------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-10.PNG" width="50%">  
 
 * 실행해보면 체력이 0이된 플레이어는 캐릭터가 사라지고 Game Scene에있는 Main카메라로 시점이 바뀐다.  
@@ -190,6 +195,10 @@ public class PlayerController : MonoBehaviourPunCallbacks/*다른 포톤 반응 
         if (Input.GetMouseButtonDown(0))//마우스 좌클릭시
         {
             items[itemIndex].Use();//들고있는 아이템 사용
+        }
+        if (transform.position.y < -10f)//맵밖으로 나감
+        {
+            Die();
         }
     }
    
