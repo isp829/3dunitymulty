@@ -1,7 +1,7 @@
 사용할 아이템 만들기      
 =======================
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-1.PNG" width="100%" height="100%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-2.PNG" width="100%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-2.PNG" width="50%">  
 
 * PlayerController 스크립트를 수정해주자.  
 * IDamageable인터페이스를 불러오고, 함수를 재정의 해주자.  
@@ -12,7 +12,7 @@
 * 실행해보면 잘 작동한다.  
 
 --------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-4.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-4.PNG" width="100%">  
 
 * 하지만 아직은 정보가 나한테만 뜨고 남한테는 안뜬다.  
 * 피해를 입힌쪽만 뜨고 받은쪽은 아무것도 안뜨면 의미가 없으니까 코드를 수정해준다. 
