@@ -2,87 +2,82 @@
 =======================
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-6/6-6-1.PNG" width="100%">  
 
-* 두개를 실행시켜서 해보면 플레리어는 총에 맞아서 사라졌는데 총알 자국만 공중에 둥둥 떠다니는걸 볼 수 있다.  
-* 어떻게 해야될까?   
-
---------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-2.PNG" width="50%">  
-
-* SpawnPoint 프리펩에 SpawnPoint 스크립트를 넣어주고 시작하면 사라지는 Graphics에 capsule을 넣어준다.   
+* 두개를 실행시켜서 해보면 플레이어는 총에 맞아서 사라졌는데 총알 자국만 공중에 둥둥 떠다니는걸 볼 수 있다.  
+* 어떻게 해야될까?    
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-3.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-6/6-6-2.PNG" width="100%">  
 
-* SpwanManager에 SpawnManager스크립트를 넣어준다.  
-* Spawnpoint는 아까 코드에서 Spawnpoint스크립트를 가진 모든 요소들이 자동으로 할당되므로 일일이 넣어줄 필요없다.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-4.PNG" width="50%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-5.PNG" width="50%">    
-
-* 5개를 같이 실행해서 여러번 테스트해봤다.  
-* 각자 5개 모두 랜덤하게 시작지점을 가지는걸 볼 수 있다.  
+* Single Shot Gun 스크립트를 열어서 수정해주자.   
+* Physics.OverlapSphere를 사용하여 총알자국 근처에있는 Collider를 반환해서 부모로 삼게 해주자.  
+* 또 총알 자국이 그냥 10초 지나면 알아서 사라지게 해서 총알 자국이 영원히 못남게 해주자.  
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-6.PNG" width="50%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-7.PNG" width="50%">  
- 
-* Rifle과 Pistol에 PhotonView를 달아준다.  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-6/6-6-3.PNG" width="100%">  
 
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-8.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-9.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-10.png" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-11.PNG" width="50%">  
-
-* Single SHot Gun 스크립트를 수정해주자.  
-* PhotonView를 추가해주고 RayCast에 맞으면 맞은 위치를 말하도록 해주자.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-12.PNG" width="50%">  
-
-* 실행해보면 RayCast에 맞은 위치가 나온다.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-13.PNG" width="50%">  
-
-* Gun 스크립트를 수정해주자.  
-* 맞은 위치를 표시할 GameObject를 선언해주자.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-14.PNG" width="50%">  
-
-* Game Scene에서 3D Object Quad를 만들어주고 크기를 줄여준다음 아까 만든 Spawnpoint 메테리얼을 적용시켜주자. 
-* Quad는 한쪽면에서만 보이므로 180도 틀어준다.  
-* Collider도 없애주자.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-15.PNG" width="50%">  
-
-* 프리펩화 시켜준다.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-16.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-17.PNG" width="50%">  
-
-* Single SHot Gun 스크립트를 수정해주자.  
-* RayCast가 맞은위치에 BulletImpact를 생성하도록 코드를 추가해주자.  
-* 자국이 남는 방향은 물체의 방향과 동일하게 하도록 hitNormal을 써주자.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-18.png" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-19.png" width="50%">  
-
-* PlayerController 프리펩에 있는 Rifle과 Pistol에 BulletImpact를 넣어주자.  
-
-----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-20.PNG" width="50%">  
-
-* 게임을 실행하면 이런식으로 자국이 남는다.  
-
-----------------------------------   
-
+* 실행해보면 이제 플레이어가 GameOver되서 사라지면 총알 자국도 바로사라진다.  
 
 ---------------------------  
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Photon.Pun;
 
+public class SingleShotGun : Gun
+//Gun으로부터 정보받기
+{
+    [SerializeField] Camera cam;
+    PhotonView PV;
+    void Awake()
+    {
+        PV = GetComponent<PhotonView>();  
+    }
+    public override void Use()
+    {
+        Debug.Log("using gun " + itemInfo.itemName);
+        Shoot();
+    }
+
+    void Shoot()
+    {
+        Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
+        //카메라로부터 레이저 발사
+        ray.origin = cam.transform.position;
+        //발사지점 카메라로부터
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
+            //레이저에 맞은 물체가 데미지를 입을 수 있는 물체인가? 맞다면 아이템 정보에 맞는 데미지 받기
+            PV.RPC("RPC_Shoot", RpcTarget.All, hit.point,hit.normal );
+            //맞추면 상대방한테 맞았다고 알려주기
+        }
+    }
+
+    [PunRPC]//Pun Remote Procedure Call의 약자로써 원격제어를 통해 함수를 실행시키는 기능이다.  
+    void RPC_Shoot(Vector3 hitPosition,Vector3 hitNoraml) 
+    {//hitNormal은 맞는 면이 향하는 방향이다.  
+        Collider[] colliders = Physics.OverlapSphere(hitPosition, 0.3f);
+        //0.3f 반경내에 collider들을 검출한다. 
+        if (colliders.Length != 0)//콜라이더가 존재한다면
+        {
+            GameObject bulletImpactObj=Instantiate(bulletImpactPrefab, hitPosition + hitNoraml * 0.001f, Quaternion.LookRotation(hitNoraml, Vector3.up) * bulletImpactPrefab.transform.rotation);
+            //hitPosition+hitNormal*0.001f를 해주면 총알 자국이 대상표면 보다 아주 살짝 위에있게되서 겹쳐보이지 않는다. 
+            Destroy(bulletImpactObj, 10f);
+            //총알 자국은 10초후에는 사라진다.  
+            bulletImpactObj.transform.SetParent(colliders[0].transform);
+            //주변에 있는 콜라이더를 부모로 설정한다.  
+            //부모가 사라지면 자식물체들도 다 사라지므로 총알자국만 둥둥떠다니는걸 해결 할 수 있다.  
+        }
+    }
+        
+}
+
+```
+
+* Single Shot Gun 스크립트의 전문이다.  
+
+----------------------------------------------   
 [목차로](https://github.com/isp829/3dunitymulty/blob/master/README.md)  
-[다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture6-5.md)  
+[다음](https://github.com/isp829/3dunitymulty/blob/master/lecture/lecture7-1.md)  
 -----------------------------   
