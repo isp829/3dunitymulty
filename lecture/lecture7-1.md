@@ -8,7 +8,7 @@
 ----------------------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-2.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-3.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-4.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-4.PNG" width="100%">  
 
 * PlayerController로부터 리스트를 받아서 그중에 한사람을 술래로 정해주는 코드를 구현하자.  
 * 게임이 시작되고 3초후에 술래가 정해지도록 지연을 넣자.  
@@ -16,7 +16,7 @@
 ----------------------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-5.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-6.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-7.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-7.png" width="100%">  
 
 * PlayerController 스크립트도 수정해주자.  
 * 체력과 술래인지 아닌지를 표현하는 텍스트를위해 TMP를 사용해주자. 
@@ -24,7 +24,7 @@
 * GameController와의 정보 주고 받기를 위해서 PlayerController도 선언해주고 GameController를 사용한다고 선언해주고 추가해주자.   
 
 ----------------------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-8.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-8.PNG" width="100%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-9.png" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-10.PNG" width="50%">  
 
