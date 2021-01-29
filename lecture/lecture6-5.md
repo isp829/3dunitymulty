@@ -1,15 +1,15 @@
 사용할 아이템 만들기      
 =======================
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-1.PNG" width="100%" height="100%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-2.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-1.PNG" width="50%">  
 
-* PlayerController 스크립트를 수정해주자.  
-* IDamageable인터페이스를 불러오고, 함수를 재정의 해주자.  
+* PlayerManager 스크립트를 수정해주자.  
+* SpawnManager로부터 Spawnpoint를 받아와서 인스턴스 생성할때 그 위치에 생성하도록 해주자.  
 
 --------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-3.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-2.PNG" width="50%">  
 
-* 실행해보면 잘 작동한다.  
+* PlayerManager 스크립트를 수정해주자.  
+* SpawnManager로부터 Spawnpoint를 받아와서 인스턴스 생성할때 그 위치에 생성하도록 해주자.  
 
 --------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-4.PNG" width="100%">  
