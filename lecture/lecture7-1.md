@@ -16,7 +16,7 @@
 ----------------------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-5.PNG" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-6.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-7.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-7.png" width="50%">  
 
 * PlayerController 스크립트도 수정해주자.  
 * 체력과 술래인지 아닌지를 표현하는 텍스트를위해 TMP를 사용해주자. 
@@ -25,7 +25,7 @@
 
 ----------------------------------------------   
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-8.PNG" width="50%">  
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-9.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-9.png" width="50%">  
 <img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture7/lecture7-1/7-1-10.PNG" width="50%">  
 
 * 기존에는 시작하자마자 아이템을 꼈지만 이제 술래만 아이템을 사용할 수 있으므로 시작할때는 아무것도 안들게 해준다.   
