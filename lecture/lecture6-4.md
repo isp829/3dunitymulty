@@ -61,7 +61,7 @@
 * SpawnPoint를 프리펩화 시켜준다.  
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-14.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-14.png" width="50%">  
 
 * SpawnPoint를 스폰지점으로 삼고 싶은 곳에다가 놓아주자.  
 
