@@ -1,29 +1,29 @@
 사용할 아이템 만들기      
 =======================
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-1.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-1.PNG" width="50%">  
 
 * PlayerManager 스크립트를 수정해주자.  
 * SpawnManager로부터 Spawnpoint를 받아와서 인스턴스 생성할때 그 위치에 생성하도록 해주자.  
 
 --------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-2.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-2.PNG" width="50%">  
 
 * SpawnPoint 프리펩에 SpawnPoint 스크립트를 넣어주고 시작하면 사라지는 Graphics에 capsule을 넣어준다.   
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-3.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-3.PNG" width="50%">  
 
 * SpwanManager에 SpawnManager스크립트를 넣어준다.  
 * Spawnpoint는 아까 코드에서 Spawnpoint스크립트를 가진 모든 요소들이 자동으로 할당되므로 일일이 넣어줄 필요없다.  
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-4.PNG" width="50%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-5.PNG" width="50%">    
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-4.PNG" width="50%"><img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-5.PNG" width="50%">    
 
 * 5개를 같이 실행해서 여러번 테스트해봤다.  
 * 각자 5개 모두 랜덤하게 시작지점을 가지는걸 볼 수 있다.  
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-5-6.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-5/6-5-6.PNG" width="50%">  
  
 * 
 
