@@ -25,7 +25,7 @@
 * 하지만 맞아도 아무일이 없다면 의미가 없다.  
 
 ----------------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-6.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture6/lecture6-4/6-4-6.PNG" width="100%">  
 
 * 이제 최대 체력이 있고 맞을때마다 체력이 깎이고 체력이 0이되면 GameOver되도록 코드를 추가해주자.  
 * PlayerManager 스크립트를 수정해주자. 플레이어 컨트롤러 인스턴스를 만들때 포톤뷰 아이디를 가지게 해주자. 
