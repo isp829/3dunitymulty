@@ -44,7 +44,7 @@
 * DieCamera 스크립트를 작성해주자.  
 
 ---------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture9/lecture9-1/9-1-10.PNG" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture9/lecture9-1/9-1-10.PNG" width="100%">  
 
 * 플레이어 움직이는 스크립트랑 똑같은 구조다.  
 
