@@ -49,7 +49,7 @@
 * 플레이어 움직이는 스크립트랑 똑같은 구조다.  
 
 ---------------------------   
-<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture9/lecture9-1/9-1-11.png" width="50%">  
+<img src="https://github.com/isp829/3dunitymulty/blob/master/images/lecture9/lecture9-1/9-1-11.png" width="100%">  
 
 * BuildSettings=>ProjectSettings=>InputManager에서 Jump의 음수버튼을 x로 설정해주자.  
 * 이렇게 되면 관전 카메라는 스페이스바를 누르면 위로 올라가고 x를 누르면 아래로 내려가면서 떠다닐꺼다.  
